@@ -51,10 +51,10 @@
 	#undef EXT_HASH
 #endif
 #ifdef GCC2
-	#undef EXT_HASH
+//	#undef EXT_HASH
 #endif
 #ifdef EXT_HASH
-//	#include <ext/hash_map>
+	#include <ext/hash_map>
 #else
 	#ifdef _MSC_VER
 	#include <hash_map>
@@ -76,7 +76,7 @@ using namespace std;
 
 #ifndef GCC2
 #ifndef _MSC_VER
-	using namespace __gnu_cxx;  // using gnu extensions such as "hash"
+//	using namespace __gnu_cxx;  // using gnu extensions such as "hash"
 #endif
 #endif
 
